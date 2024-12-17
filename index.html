@@ -1041,10 +1041,21 @@
 
                                 #page-header .primary .logo {
                                     margin-left: 0;
+                                    margin-top: -10px;
+                                    max-height: 70px !important;
+                                }
+                                
+                                #page-header .primary ul.header-tools {
+                                    padding: 7px;
+                                    font-size: 0.5rem !important;
+                                }
+
+                                #page-header .primary ul.header-tools>li>a i {
+                                    vertical-align: -3px;
                                 }
 
                                 #page-content {
-                                    top: 75px;
+                                    top: 40px;
                                 }
 
                                 section.page-section-header-home-index {
@@ -1052,18 +1063,22 @@
                                 }
 
                                 #page-header .primary .container {
-                                    flex-direction: column-reverse;
+                                    flex-direction: column;
                                 }
                                 
                                 .page-section-header-home-index:not(.improvedLayout) .container {
-                                    top: 105px !important;
+                                    top: 107px !important;
                                     max-width: 300px !important;
                                 }
 
                                 #main-search .global-search .search-field, .global-search .field-button-wrapper {
-                                    height: 25px !important;
+                                    height: 22px !important;
                                 }
 
+                                .global-search .search-field {
+                                    box-shadow: 0 0 4px 0px #ffffff !important;
+                                }
+                                
                                 .global-search .search-submit button {
                                     font-size: 12px;
                                 }
@@ -1089,6 +1104,10 @@
                             }
 
                             @media (min-width: 481px) and (max-width: 720px) {
+                                .primary .logo {
+                                    max-height: 85px !important;
+                                }
+
                                 #main-search .global-search .search-field, .global-search .field-button-wrapper {
                                     height: 30px !important;
                                 }
@@ -1103,10 +1122,6 @@
                             }
 
                             @media only screen and (max-width: 720px) {
-                                .primary .logo {
-                                    max-height: 85px !important;
-                                }
-
                                 #page-header .primary .logo img {
                                     max-height: inherit !important;
                                     height: unset !important;
