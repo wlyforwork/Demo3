@@ -84,7 +84,7 @@
                 <a href="/pureportal/en/" class="logo">
                     
                         <span class="sr-only">CityU Scholars Home</span>
-                        <img src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/CityU_Logo-Reverse-no_margin.png" alt="CityU Scholars Logo"/>
+                        <img src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/CityU_Horizontal_Logo_Reverse-white.png" alt="CityU Scholars Logo"/>
                     
                 </a>
                 
@@ -583,11 +583,6 @@
                         <div class="text-block">
                             <style>
                             /*General Setting*/
-                            
-                            body {
-                                transition: background-position 0.3s ease;
-                            }
-
                             h1.title {
                                 font-size: min(max(3.5vw, 14px), 16px);
                             }
@@ -615,11 +610,6 @@
                             }
 
                             /*Header Layout*/
-                                
-                            .page-section-header-home-index {
-                                min-height: 350px !important;
-                            }
-
                             header {
                                 position: absolute;
                                 z-index: 1;
@@ -666,14 +656,17 @@
                             }
 
                             .primary .logo {
-                                background: linear-gradient(45deg, #2b002099, #85296699);
+                                background: linear-gradient(45deg, #2b002099, #6d124a99);
                                 border-radius: 8px;
                                 box-shadow: 0 0 20px 1px #ffffff4d;
+                                max-height: 75px;
                             }
 
                             .primary .logo img {
-                                max-height: 78px;
-                                padding: 15px;
+                                max-height: 85px;
+                                padding: 0;
+                                margin-top: -6.5px;
+                                margin-left: 8px;
                             }
 
                             #page-header .primary {
@@ -681,6 +674,11 @@
                                 background-color: transparent !important;
                                 max-width: 100%;
                                 margin: auto;
+                            }
+
+                            .page-section-header-home-index {
+                                min-height: 350px !important;
+                                transition: min-height 0.1s ease-in-out;
                             }
 
                             .page-section-header-home-index.has-backdrop-image {
@@ -713,6 +711,7 @@
                                 position: absolute;
                                 top: 238px;
                                 padding: 0 0 0 115px;
+                                transition: top 0.3s ease-in-out;
                             }
 
                             /*Header Layout - Search Bar*/
@@ -1027,7 +1026,7 @@
 
                             @media screen and (max-width: 480px) {
                                 header {
-                                    background: linear-gradient(45deg, #670e44, #560638) !important;
+                                    background: linear-gradient(45deg, #2b0020, #6b1249) !important;
                                 }
 
                                 #page-header .primary {
@@ -1037,8 +1036,7 @@
                                 #page-header .primary .logo {
                                     margin-left: -20px;
                                 }
-                                
-                                
+                            
                                 #page-header .primary ul.header-tools {
                                     padding: 4px;
                                     font-size: 0.6rem !important;
@@ -1103,7 +1101,7 @@
 
                             @media screen and (max-width: 511px) {
                                 #page-header .primary ul.header-tools {
-                                    font-size: 0.75rem;
+                                    font-size: 0.75rem !important;
                                 }
                             }
 
@@ -1130,6 +1128,7 @@
                                     max-height: inherit !important;
                                     height: unset !important;
                                 }
+
                                 .page-section-header-home-index {
                                     min-height: calc(250px - 3vw) !important;
                                 }
@@ -1167,7 +1166,7 @@
                                 }
 
                                 #page-header .primary .container {
-                                    padding: 0 25px;
+                                    padding: 0 25px 0 17px;
                                     margin-top: 0;
                                     max-height: 70px;
                                 }
@@ -1179,14 +1178,16 @@
                                 }
 
                                 .primary .logo img {
-                                    max-height: 71px;
-                                    padding: 10px 0;
-                                    margin-top: 3px;
+                                    max-height: 76px;
+                                    margin-top: 0;
+                                    margin-left: 0;
                                 }
 
                                 .page-section-header-home-index.has-backdrop-image {
                                     background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Web-Banner_d1_for-mobile.png");
                                     background-position: center center;
+                                    min-height: 350px;
+                                    transition: min-height 0.1s ease-in-out;
                                 }
 
                                 #page-header .primary ul.header-tools {
