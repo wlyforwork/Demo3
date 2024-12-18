@@ -682,7 +682,7 @@
                             }
 
                             .page-section-header-home-index.has-backdrop-image {
-                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Web-Banner_d1_v2.png");
+                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Web-Banner_d1_BG-only.png");
                                 background-position: center left;
                             }
 
@@ -1101,7 +1101,13 @@
 
                             @media screen and (max-width: 511px) {
                                 #page-header .primary ul.header-tools {
-                                    font-size: 0.75rem !important;
+                                    font-size: 0.75rem;
+                                }
+                            }
+
+                            @media (min-width: 512px) and (max-width: 910px) {
+                                #page-header .primary ul.header-tools {
+                                    font-size: 1.05rem;
                                 }
                             }
 
@@ -1147,6 +1153,7 @@
                                     bottom: 54px;
                                 }            
                             }
+                            
 
                             @media screen and (max-width: 910px) { 
                                 
@@ -1187,11 +1194,9 @@
                                     background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Web-Banner_d1_for-mobile.png");
                                     background-position: center center;
                                     min-height: 350px;
-                                    transition: min-height 0.1s ease-in-out;
                                 }
 
                                 #page-header .primary ul.header-tools {
-                                    font-size: 1.05rem;
                                     background: #ffffff26;
                                 }
 
