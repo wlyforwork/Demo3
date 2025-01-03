@@ -84,7 +84,7 @@
                 <a href="/pureportal/en/" class="logo">
                     
                         <span class="sr-only">CityU Scholars Home</span>
-                        <img src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/CityU_Horizontal_Logo_Reverse-white.png" alt="CityU Scholars Logo"/>
+                        <img src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/lib_logo_eng_30.png" alt="CityU Scholars Logo"/>
                     
                 </a>
                 
@@ -583,30 +583,72 @@
                         <div class="text-block">
                             <style>
                             /*General Setting*/
-                            h1.title {
-                                font-size: min(max(3.5vw, 14px), 16px);
-                            }
 
                             h2 { 
-                                color: #bf165e;
-                                background: linear-gradient(225deg, #bf165e 0%, #bf165e 75%, #7c257c 100%);
+                                font-size: 1.8rem !important;
+                                font-weight: bold;
+                                background: linear-gradient(45deg, #ff6633, #d0134e);
                                 background-clip: text;
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
+                            }
+
+                            h3 {
+                                font-size: 1.2rem;
+                                margin: 25px 0 10px 0;
+                                color: #666;
                                 font-weight: bold;
                             }
 
-                            .tabs [role="tab"] {
-                                height: 20px;
-                            }
-
-                            .language-dropdown, .global-search-wrapper .header {
-                                display: none !important;
+                            h4 {
+                                margin: 0 0 6px 0;
+                                display: flex;
+                                justify-content: center;
+                                color: #d0134e;
+                                font-size: 1.25rem;
                             }
                             
+                            h1.title, .language-dropdown, #page-header .primary  .container:before, .container:after, .global-search-wrapper .header {
+                                display: none !important;
+                            }
+
+                            .container {
+                                max-width: 1250px;
+                            }
+
                             .page-section {
                                 border-bottom: 0 !important;
                                 padding-bottom: 20px !important;
+                            }
+
+                            /*Effect Setting for Whole or Elements under Different Sections*/
+                            * {
+                                transition: min-height 0.1s ease-in-out;
+                            }
+
+                            ul.header-tools:hover, .sdg-dashboard1:hover, .world-map-concept:hover {
+                                transform: scale(0.95);
+                                transition: transform 0.1s ease-in-out;
+                            }
+                            
+                            .btninfo:hover, .sdg-dashboard2:hover, sdg-dashboard2_1:hover {
+                                transform: scale(0.98);
+                                transition: transform 0.1s ease-in-out;
+                            }
+
+                            .global-search .search-submit button .icon:hover {
+                                transform: scale(0.9);
+                                transition: transform 0.1s ease-in-out;
+                            }
+
+                            #sdg_banner ul.sdg_icons>li button img:hover {
+                                transform: translateY(-4px);
+                                transition: transform 0.1s ease-in-out;
+                            }
+
+                            .sdg-dashboard2:hover .sdg-hidden-text, .sdg-dashboard2_1:hover .sdg-hidden-text {
+                                bottom: 0;
+                                transition: bottom 0.3s ease-in-out;
                             }
 
                             /*Header Layout*/
@@ -615,168 +657,174 @@
                                 z-index: 1;
                                 width: 100%;
                             }
-                            
-                            #page-header .primary ul.header-tools {
-                                position: unset;
-                                margin-top: unset !important;
-                                margin-bottom: unset !important;
-                                display: flex;
-                                font-size: 1.3rem;
-                                padding: 10px;
-                                background: #b3659073;
-                                border-radius: 5px;
-                                align-items: center;
-                                justify-content: center;
-                            }
-
-                            ul.header-tools:hover, .global-search .search-submit button:hover, .btninfo:hover, #sdg_banner ul.sdg_icons>li button img:hover {
-                                transform: scale(1.05);
-                            }    
-
-                            #page-header .primary ul.header-tools>li {
-                                background: none !important;
-                                border: unset !important;
-                            }
-
-                            #page-header .primary ul.header-tools>li>a i, #page-header .primary ul.header-tools>li>a span, .page-section-header-home-index .container .search-menu a, .page-section-header-home-index .container .search-menu a:visited {
-                                color: white !important;
-                            }
-                            
-                            #page-header .primary ul.header-tools>li>a i {
-                                vertical-align: -5px;
-                            }
-
-                            #page-header .primary ul.header-tools>li>a {
-                                background: #b3659073;
-                                border-radius: 5px;
-                                text-align: center;
-                                align-content: center;
-                                padding: 10px 25px;
-                                max-height: 52px;
-                            }
-
-                            .primary .logo {
-                                background: linear-gradient(45deg, #2b002099, #6d124a99);
-                                border-radius: 8px;
-                                box-shadow: 0 0 20px 1px #ffffff4d;
-                                max-height: 75px;
-                            }
-
-                            .primary .logo img {
-                                max-height: 85px;
-                                padding: 0;
-                                margin-top: -6.5px;
-                                margin-left: 8px;
-                            }
 
                             #page-header .primary {
                                 padding: 0;
                                 background-color: transparent !important;
-                                max-width: 100%;
                                 margin: auto;
-                            }
-
-                            .page-section-header-home-index {
-                                min-height: 350px !important;
-                                transition: min-height 0.1s ease-in-out;
-                            }
-
-                            .page-section-header-home-index.has-backdrop-image {
-                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Web-Banner_d1_BG-only.png");
-                                background-position: center left;
+                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/d5_Bar_v3.png");
+                                background-repeat: no-repeat;
+                                background-size: cover;
                             }
 
                             #page-header .primary .container {
+                                max-width: 100%;
                                 position: unset !important;
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
-                                padding: 0 115px;
-                                max-width: 100%;
-                                margin-top: 10px;
+                                padding: 0 25px;
                             }
 
-                            #page-header .primary  .container:before, .container:after {
-                                content: none !important;
+                            /*                            
+                            #page-header .primary .logo {
+                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/CityU_Horizontal_Logo_Reverse-white.png");
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                margin-right: 0;
+                                max-height: 88px;
+                                width: auto;
+                                margin-top: -9px;
+                                margin-left: -8px;
+                                max-width: unset;
                             }
 
-                            .page-section-header-home-index:not(.improvedLayout) .container .global-search-wrapper:not(.improvedLayout) {
-                                width: 100%;
+                            #page-header .primary .logo img {
+                                visibility: hidden;
+                                height: 88px !important;
+                                max-width: 288px;
+                            }
+                            */
+
+                            #page-header .primary .logo img {
+                                padding: 15px;
+                                max-height: 90px;
+                                width: auto;
+                                margin-top: -9px;
+                                margin-left: -8px;
+                                margin-bottom: -10px;
+                                max-width: unset;
+                            }
+
+                            #page-header .primary ul.header-tools {
+                                position: unset;
+                                margin-bottom: unset !important;
+                                font-size: 1.05rem;
+                                padding: 7px;
+                                margin-top: -6px;
+                                background: #ffffff9a;
+                                border-radius: 50px;
+                                transition: transform 0.1s ease-in-out;
                             }
                             
+                            #page-header .primary ul.header-tools .help-and-faq {
+                                background: none !important;
+                                border: unset !important;
+                            }
+
+                            #page-header .primary ul.header-tools .help-and-faq a {
+                                background: #fff;
+                                border-radius: 50px;
+                                text-align: center;
+                                align-content: center;
+                                padding: 3px 6.5px;
+                                max-height: 32px;
+                            }
+                            
+                            #page-header .primary ul.header-tools .help-and-faq .label {
+                                background: linear-gradient(45deg, #ff6633, #d0134e);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                            }
+                            
+                            a[aria-label="Go to advanced search"], a[aria-label="Go to advanced search"]:visited {
+                                color: white !important;
+                            }
+
+                            #page-header .primary ul.header-tools .help-and-faq .icon-lifebuoy {
+                                vertical-align: -5px;
+                                color: #ff6633 !important;
+                            }
+
+                            .page-section-header-home-index.has-backdrop-image {
+                                min-height: 350px !important;
+                                background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Web-Banner_d5_BG-only.png");
+                            }
+
+                            /*Header Layout - Searching Bar*/
                             .page-section-header-home-index:not(.improvedLayout) .container {
-                                max-width: 100% !important;
+                                position: absolute;
+                                top: 230px;
+                                background: none !important;
+                                max-width: unset !important;
                                 width: 100%;
                                 min-width: unset !important;
-                                position: absolute;
-                                top: 238px;
-                                padding: 0 0 0 115px;
+                                padding: 0;
                                 transition: top 0.3s ease-in-out;
                             }
-
-                            /*Header Layout - Search Bar*/
                             
-                            .global-search {
-                                border: 0;
-                                background: unset;
-                            }
-
                             .global-search-wrapper {
-                                max-width: 674px;
+                                max-width: 500px;
                                 height: fit-content;
                                 display: flex;
-                                align-items: flex-start;
+                                align-items: flex-end;
                                 flex-direction: column;
-                                row-gap: 15px;
-                                margin: 0;
+                                row-gap: 2px;
                             }    
 
-                            .global-search-wrapper > #main-search {
+                            #main-search {
                                 width: 100%;
                                 margin-top: 0;
                             }
 
-                            .global-search .search-field {
-                                width: 100.5%;
-                                border-radius: 7px 0 0 7px;
-                                height: 41px !important;
-                                box-shadow: 0 0 20px 1px #ffffff4d !important;
-                            }
-
-                            .global-search .search-field input {
-                                color: #981f61 !important;
+                            .global-search {
+                                border: 0;
+                                background: unset;
                             }
 
                             .global-search .field-button-wrapper {
                                 display: grid !important;
                                 grid-template-columns: 1.5fr 0.1fr;
                             }
+
+                            .global-search .field-button-wrapper, .global-search .search-field, #normalSearch {
+                                max-height: 35px; 
+                                height: unset;
+                            }
+
+                            .global-search .search-field {
+                                width: 101%;
+                                border-radius: 5px 0 0 5px;
+                                box-shadow: 0 0 5px 1px #ffffff4a !important;
+                            }
+
+                            .global-search .search-field input {
+                                color: #981f61 !important;
+                            }
                                 
                             .global-search .search-submit {
                                 width: 100% !important;
                             }
 
-                            .global-search .search-submit button {
-                                background: #981f61 !important;
+                            #normalSearch {
+                                background: linear-gradient(45deg, #ff6633, #d0134e);
                                 color: unset;
-                                border-radius: 2px 7px 7px 2px;
+                                border-radius: 0 5px 5px 0;
                                 padding: 5px;
                                 margin: 0;
                                 font-size: 20px;
                                 width: 100%;
                                 height: 100%;
                                 justify-content: center;
-                                box-shadow: 0 0 9px 0px #ffffff !important;
+                                box-shadow: 0 0 6px 2px #ffffff80 !important
                             }
 
-                            .global-search .search-submit button:hover .icon {
+                            #normalSearch:hover .icon {
                                 color: white !important;
                             }
 
-                            .page-section-header-home-index .container .search-menu a, .page-section-header-home-index .container .search-menu a {
-                                font-size: 1.05rem;
-                                padding-left: 3px;
-                                text-shadow: #ffffff 0 0 9px !important;
+                            #normalSearch .icon {
+                                transition: transform 0.1s ease-in-out;
                             }
 
                             ul.search-menu {
@@ -785,20 +833,22 @@
                                 padding-top: 0;
                             }
 
-                            .page-section-header-home-index {
-                                text-align: left;
+                            a[aria-label="Go to advanced search"] {
+                                font-size: 1.05rem;
+                                padding-left: 3px;
+                                text-shadow: #eb460f 0px 0 5px !important;
                             }
-
-                            .advanced-SearchBox-Container .advanced-search-header {
-                                color: #981f61;
-                                font-weight: bold;
-                            }
-
-                                .advanced-SearchBox-Container {
+                            
+                            .advanced-SearchBox-Container {
                                 color: #981f61;
                                 background-color: #ffffff;
                                 box-shadow: 2px 2px 8px 0px #c2308029;
                                 border-radius: 5px;
+                            }
+
+                            #search-as-headline {
+                                color: #981f61;
+                                font-weight: bold;
                             }
 
                             .advanced-SearchBox-Container a:hover, .advanced-SearchBox-Container a:focus {
@@ -807,28 +857,73 @@
                             }
 
                             /*Navigation Bar Layout*/
-
-                            #main-navigation > ul > li > a > span > span.label, #main-navigation > ul > li > button > span.label {
-                                color: #c21975 !important;
-                                font-weight: bold;
-                            }
-
-                            #main-navigation > ul > li.dropdown-overflow {
-                                margin-right: 25px !important;
-                            }
-
-                            .page-section-home #main-navigation>ul {
-                                justify-content: space-evenly;
-                            }
-
-                            .page-section-content-home-index .secondary {
+                            #main-content .secondary {
                                 border-bottom: 0 !important;
                             }
                             
+                            #main-navigation {
+                                padding: 20px 0;
+                            }
+
+                            #main-navigation a.portal_link[role="menuitem"] span.label, #main-navigation button.dropdown-toggle[role="menuitem"] span.label {
+                                color: #d0134e !important;
+                                font-weight: bold;
+                                margin-top: 0;
+                                font-variant: all-small-caps;
+                            }
+
+                            #main-navigation .has-overflow-navigation[role="menubar"] {
+                                margin: 0 auto;
+                                display: grid;
+                                grid-template-columns: repeat(auto-fit, minmax(84px, 110px));
+                                text-align: center;
+                                justify-content: space-around;
+                            }
+
+                            #main-navigation ul.has-overflow-navigation[role="menubar"]>li {
+                                padding: 10px 5px 10px !important;
+                                margin-left: 0;
+                                border-radius: 5px;
+                                border: 1px solid #bf165e0f;
+                                position: relative;
+                            }
+
+                            .page-section-content-home-index .secondary nav.content-navigation ul.has-overflow-navigation a, #main-navigation i.icon.icon-dots {
+                                position: unset;
+                            }
+
+                            #main-navigation button:hover i.icon.icon-dots, #main-navigation ul.has-overflow-navigation li a:hover i {
+                                background: linear-gradient(45deg, #ff6633, #d0134e);
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                            }
+
+                            #main-navigation .dropdown-menu a {
+                                position: relative;
+                            }
+
+                            #main-navigation .icon {
+                                font-size: 1.6rem !important;
+                                margin: 0 auto -5px auto;
+                            }
+
+                            #main-navigation .count {
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                background: linear-gradient(45deg, #ff6633, #d0134e);
+                                border-radius: 0 5px 0 5px;
+                                text-align: center;
+                                width: fit-content;
+                                font-size: .6rem !important;
+                                transform: unset;
+                            }
+
                             /*Content Layout*/
 
                             .page-section .welcome {
-                                margin-top: 0 !important;
+                                margin-top: 0;
                             }
 
                             .container-inner {
@@ -838,80 +933,76 @@
                                 max-height: 200px;
                             }
 
+                            .ranking {
+                              background: #bf165e05;
+                                border-radius: 5px;
+                                box-shadow: 2px 2px 4px 0px #c230800d;
+                                padding: 10px 15px;  
+                            }
+                        
+                            .sdg-sub-des {
+                                margin: 0 0 -25px 0;
+                            }
+
+
+                            .wrapper, .slick-list, .slick-track, .slick-slide-container img, .ranking {
+                                max-height: 200px;
+                                overflow: hidden;
+                                background: linear-gradient(white, white) padding-box,linear-gradient(45deg, #ff6633, #d0134e)border-box;
+                                border: 2px solid transparent;
+                                border-radius: 5px;
+                                padding: 7px 10px 10px 10px;
+                            }
+
                             .wrapper {
                                 width: 100%;
                                 overflow: hidden;
                                 position: relative;
                                 border-radius: 5px;
                                 box-shadow: 2px 2px 8px 0px #c230800d;
-                                max-height: 200px;
                                 height: fit-content;
                             }
 
-                            .slick-slide-container {
-                                display: block;
-                                height: 100%;
+                            .slider {
                                 overflow: hidden;
-                            }
-
-                            .slick-slide-container img {
-                                border-radius: 5px;
-                                height: 100%;
                                 width: 100%;
-                                object-fit: cover;
-                                max-height: 200px;
+                                position: relative;
+                                display: flex;
+                                -webkit-mask-image: linear-gradient(to right, hsl(0 0% 0% / 0) 1%, hsl(0deg 0% 0%) 20%, hsl(0 0% 0% / 1) 80%, hsl(0 0% 0% / 0) 99%);
+                                mask-image: linear-gradient(to right, hsl(0 0% 0% / 0) 1%, hsl(0deg 0% 0%) 20%, hsl(0 0% 0% / 1) 80%, hsl(0 0% 0% / 0) 99%);
                             }
 
-                            .slick-list, .slick-track {
-                                max-height: 200px;
+                            .slider .slide-track {
+                                -webkit-animation: scroll 25s linear infinite;
+                                animation: scroll 25s linear infinite;
+                                display: flex;
+                                flex-direction: row;
+                                column-gap: 10px;
+                                width: calc(110px * 12);
                             }
 
-                            .slick-dots {
-                                border: 0px;
-                                width: fit-content;
-                                text-align: unset;
-                                bottom: 0 !important;
-                                margin-left: 5px;
-                            }
-
-                            .slick-dotted.slick-slider {
-                                margin-bottom: 0 !important;
-                                height: 100% !important;
-                            }
-                                                        
-                            .slick-dots li button:before {
-                                font-size: 35px;
-                                color: #981f61 !important;
-                                width: 15px;
-                                height: 15px;
-                                line-height: 15px;
-                            }
-
-                            .slider-button a {
-                                position: absolute;
-                                bottom: 20px;
-                                right: 20px;
-                                display: inline-block;
-                                padding: 8px 20px;
-                                border: 1px solid transparent;
+                            .slide img {
+                                max-width: 110px;
                                 border-radius: 5px;
-                                text-align: center;
-                                vertical-align: middle;
-                                font-size: 14px;
-                                font-weight: 400;
-                                line-height: 1em;
-                                text-decoration: none;
-                                white-space: nowrap;
-                                color: white;
-                                background-color: #981f61;
-                                transition: all .2s ease-in-out;
-                                cursor: pointer;
-                                user-select: none;
                             }
 
-                            .slick-arrow {
-                                display: none !important;
-                            }
+                            @-webkit-keyframes scroll {
+                                    0% {
+                                    transform: translateX(0);
+                                    }
+                                    100% {
+                                    transform: translateX(calc(-110px * 6));
+                                    }
+                                }
+                                    
+                                @keyframes scroll {
+                                    0% {
+                                    transform: translateX(0);
+                                    }
+                                    100% {
+                                    transform: translateX(calc(-110px * 6));
+                                    }
+                                }
 
                             .button-container {
                                 display: inline-grid;
@@ -919,7 +1010,6 @@
                                 grid-template-rows: repeat(2, 95px);
                                 gap: 10px;
                                 width: 100%;
-
                             }
 
                             .btninfo {
@@ -928,6 +1018,7 @@
                                 text-align: center;
                                 align-content: center;
                                 color: white;
+                                transition: transform 0.1s ease-in-out;
                             }
 
                             .btninfo > img, .btninfo > div > img {
@@ -936,13 +1027,13 @@
                                 height: 100%;
                                 width: 100%;
                                 border-radius: 5px;
-                                filter: brightness(0.65);
+                                filter: opacity(0.85);
                             }
 
                             .btnText {
                                 position: relative;
-                                bottom: 44px;
-                                background: #981f61ba;
+                                bottom: 43px;
+                                background: linear-gradient(45deg, #ff6633ba, #d0134ec2);
                                 padding: 5px;
                                 border-radius: 0 0 5px 5px;
                                 font-size: min(max(3.5vw, 10px), 15px);
@@ -955,14 +1046,77 @@
                             }
 
                             /*Substainable Development Layout*/
-
-                            #sdg_banner > div.container {
+                            .sdg_btn {
                                 display: flex;
-                                flex-direction: column;
+                                gap: 10px;
                             }
 
-                            .sdg_banner h2 {
-                                font-size: 1.8rem;
+                            .sdg_custom_sec {
+                                display: flex;
+                                margin-top: 50px;
+                                column-gap: 10px;
+                                align-items: center;
+                            }
+
+                            .sdg_title {
+                                margin-bottom: 0;
+                            }
+
+                            .sdg-dashboard1 {
+                                display: flex;
+                                align-items: center;
+                                background: #fff;
+                                font-size: 1.1rem;
+                                font-weight: bold;
+                                color: #b4156f;
+                                padding: 5px 10px;
+                                border-radius: 50px;
+                                height: fit-content;
+                                box-shadow: 2px 2px 8px 0px #c230800d;  
+                                transition: transform 0.1s ease-in-out;                              
+                            } 
+
+                            .sdg-dashboard1 img {
+                                max-width: 25px;
+                                padding: 0 5px 0 0;
+                            }
+
+                            .sdg-dashboard2, .sdg-dashboard2_1 {
+                                position: relative;
+                                display: flex;
+                                border-radius: 5px;
+                                box-shadow: 2px 2px 8px 0px #c230800d;
+                                overflow: hidden;
+                                margin-top: 20px;
+                            }
+
+                            .sdg-dashboard2 img.sdg-desktop, .sdg-dashboard2_1 {
+                                padding: 15px 0;
+                                transition: padding 0.3s ease-in-out;
+                            }
+
+                            img.sdg-mobile {
+                                display: none;
+                            }
+
+                            .sdg-hidden-text {
+                                position: absolute;
+                                background: #009fde;
+                                color: #fff;
+                                padding: 5px 10px 5px 21px;
+                                border-radius: 25px 0 5px;
+                                right: 0;
+                                bottom: -50px;
+                                transition: bottom 0.3s ease-in-out;
+                            }
+
+                            #sdg_banner {
+                                margin-top: 15px;
+                            }
+
+                            #sdg_banner .container {
+                                display: flex;
+                                flex-direction: column;
                             }
 
                             #sdg_banner .sdg_info {
@@ -987,6 +1141,12 @@
                                 border-radius: 5px;
                             }
 
+                            #sdg_banner div.dropdown-container span.label,  #network-map-concepts div.dropdown-container a {
+                                font-weight: bold;
+                                font-variant: all-small-caps;
+                                font-size: larger;
+                            }
+
                             /*Map Layout*/
                             path.map {
                                 fill: #bf165e1a !important;
@@ -996,15 +1156,28 @@
                                 background-color: #981f6108 !important;
                             }
 
-                            span.concept-wrapper, .dropdown-container {
+                            span.concept-wrapper, #main-navigation .dropdown-container {
                                 box-shadow: 2px 2px 8px 0px #c230800d !important;
                                 padding: 10px !important;
                                 border-radius: 5px !important;
                             }
 
-                            .dropdown-container>ul li, .dropdown-container {
+                            .dropdown-container>ul:not(.dropdown-menu) li, .dropdown-container {
                                 border-bottom: unset !important;
                                 border: unset !important;
+                            }
+
+                            .dropdown-container>ul li {
+                                border-bottom: 1px solid #c2308008;
+                            }
+
+                            .concept-badge-large {
+                                border: 0;
+                                box-shadow: none;
+                            }
+
+                            .world-map-concept {
+                                transition: transform 0.1s ease-in-out;
                             }
 
                             foreignObject.collaboration-map-home-icon {
@@ -1024,19 +1197,63 @@
                                 }
                             }
 
+                            @media screen and (max-width: 365px) {
+                                #page-content {
+                                    top: 20px !important;
+                                }
+
+                                #page-content .page-section-header-home-index.has-backdrop-image {
+                                    min-height: calc(205px - 3vw) !important;
+                                }
+                                
+                                .page-section-header-home-index:not(.improvedLayout) .container {
+                                    top: 135px !important;
+                                    max-width: 300px !important;
+                                }
+
+                                .global-search .field-button-wrapper, .global-search .search-field, #normalSearch {
+                                    height: 22px !important;
+                                }
+
+                                .global-search .search-field {
+                                    box-shadow: 0 0 4px 1px #ffffff4d !important;
+                                }
+
+                                #normalSearch {
+                                    font-size: 12px;
+                                }
+                            }
+
+                            @media screen and (max-width: 430px) {
+                                img.sdg-mobile {
+                                        display: flex;
+                                    }
+
+                                    .sdg-dashboard2 img.sdg-desktop{
+                                        display: none;
+                                    }
+                            }
+
                             @media screen and (max-width: 480px) {
                                 header {
-                                    background: linear-gradient(45deg, #2b0020, #6b1249) !important;
+                                    background: linear-gradient(to bottom, #ffdfd9, #ffdfd9c7, #ffdfd900);
+                                    backdrop-filter: blur(3px);
                                 }
 
                                 #page-header .primary {
                                     background-image: none !important;
+                                }           
+                                
+                                
+                                #page-header .primary .container {
+                                    flex-direction: column;
                                 }
 
-                                #page-header .primary .logo {
-                                    margin-left: -20px;
+                                #page-header .primary .logo img {
+                                    margin-top: 0;
+                                    margin-bottom: 0;
                                 }
-                            
+
                                 #page-header .primary ul.header-tools {
                                     padding: 4px;
                                     font-size: 0.6rem !important;
@@ -1044,53 +1261,20 @@
                                     top: 0;
                                     right: 38px;
                                     border-radius: 2px;
+                                    margin-top: unset;
                                 }
 
-                                #page-header .primary ul.header-tools>li>a {
-                                    background: #ffffff33;
+                                #page-header .primary ul.header-tools .help-and-faq a {
                                     padding: 3px 10px;
                                     border-radius: 2px;
                                 }
 
-                                #page-header .primary ul.header-tools>li>a i {
+                                #page-header .primary ul.header-tools .help-and-faq .icon-lifebuoy {
                                     vertical-align: -3px;
                                 }
 
                                 #page-content {
-                                    top: 25px;
-                                }
-
-                                section.page-section-header-home-index {
-                                    min-height: calc(170px - 3vw) !important;
-                                }
-
-                                #page-header .primary .container {
-                                    flex-direction: column;
-                                }
-                                
-                                .page-section-header-home-index:not(.improvedLayout) .container {
-                                    top: 107px !important;
-                                    max-width: 300px !important;
-                                }
-
-                                #main-search .global-search .search-field, .global-search .field-button-wrapper {
-                                    height: 22px !important;
-                                }
-
-                                .global-search .search-field {
-                                    box-shadow: 0 0 4px 0px #ffffff !important;
-                                }
-
-                                .global-search .search-submit button {
-                                    font-size: 12px;
-                                }
-
-                                .page-section-header-home-index .container .search-menu a, .page-section-header-home-index .container .search-menu a {
-                                    font-size: 0.75rem;
-                                }
-
-                                .global-search-wrapper {
-                                    row-gap: 2px;
+                                    top: 8px;
                                 }
 
                                 .btnText {
@@ -1105,110 +1289,46 @@
                                 }
                             }
 
-                            @media (min-width: 512px) and (max-width: 910px) {
-                                #page-header .primary ul.header-tools {
-                                    font-size: 1.05rem;
-                                }
-                            }
-
-                            @media (min-width: 481px) and (max-width: 720px) {
-                                .primary .logo {
-                                    max-height: 85px !important;
-                                }
-
-                                #main-search .global-search .search-field, .global-search .field-button-wrapper {
+                            @media (min-width: 365px) and (max-width: 520px) {
+                                .global-search .search-field, #normalSearch {
                                     height: 30px !important;
                                 }
-
-                                .page-section-header-home-index .container .search-menu a, .page-section-header-home-index .container .search-menu a {
-                                    font-size: 0.95rem;
-                                }
-                                
-                                .global-search-wrapper {
-                                    row-gap: 5px;
-                                }
                             }
 
-                            @media only screen and (max-width: 720px) {
-                                #page-header .primary .logo img {
-                                    max-height: inherit !important;
-                                    height: unset !important;
-                                }
-
-                                .page-section-header-home-index {
+                            @media only screen and (max-width: 520px) {
+                                .page-section-header-home-index.has-backdrop-image {
                                     min-height: calc(250px - 3vw) !important;
+                                    top: 0;
                                 }
-
+                                
                                 .page-section-header-home-index:not(.improvedLayout) .container {
                                     top: 160px;
                                 }
 
                                 .global-search-wrapper {
-                                    max-width: 430px;
+                                    max-width: 330px;
+                                }
+
+                                a[aria-label="Go to advanced search"] {
+                                    font-size: 0.8rem;
                                 }
                             }
                             
+                            @media only screen and (max-width: 654px) {
+                                .sdg_custom_sec {
+                                    flex-direction: column;
+                                    row-gap: 10px;
+                                    align-items: flex-start;
+                                }
+                            }
+
                             @media (min-width: 481px) and (max-width: 945px) {
                                 .btnText {
                                     bottom: 54px;
                                 }            
                             }
-                            
 
-                            @media screen and (max-width: 910px) { 
-                                
-                                .page-section-header-home-index:not(.improvedLayout) .container {
-                                    padding: 0;
-                                }
-
-                                .global-search-wrapper {
-                                    margin: auto;
-                                }  
-
-                                #page-header .primary {
-                                    max-width: 1337px;
-                                    background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/d2_Bar.png");
-                                    background-repeat: no-repeat !important;
-                                    background-position: top center !important;
-                                }
-
-                                #page-header .primary .container {
-                                    padding: 0 25px 0 17px;
-                                    margin-top: 0;
-                                    max-height: 70px;
-                                }
-
-                                .primary .logo {
-                                    background: none;
-                                    box-shadow: unset;
-                                    margin-right: 0 !important;
-                                }
-
-                                .primary .logo img {
-                                    max-height: 76px;
-                                    margin-top: 0;
-                                    margin-left: 0;
-                                }
-
-                                .page-section-header-home-index.has-backdrop-image {
-                                    background-image: url("https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/Web-Banner_d1_for-mobile.png");
-                                    background-position: center center;
-                                    min-height: 350px;
-                                }
-
-                                #page-header .primary ul.header-tools {
-                                    background: #ffffff26;
-                                }
-
-                                #page-header .primary ul.header-tools>li>a {
-                                    background: #ffffff26;
-                                    max-height: 32px;
-                                    padding: 3px 6.5px;
-                                }
-                            }
-
-                            @media screen and (max-width: 945px) {
-
+                            @media screen and (max-width: 945px) {                                
                                 .slider-button a {
                                     bottom: 5px;
                                     right: 15px;
@@ -1241,57 +1361,25 @@
                                 .button-container {
                                     grid-template-rows: repeat(2, 120px);
                                 }                
-                            }
-                                
-                            /* prev css re-apply */
-                            .page-section-content-home-index .secondary nav.content-navigation>ul>li, .page-section-home #main-navigation>ul li:first-child, .page-section-home #main-navigation>ul li:first-child {
-                                margin-left: unset !important;
-                                padding: 0 15px!important;
-                            }
 
-                            .page-section-content-home-index .secondary nav.content-navigation>ul>li .label {
-                                font-size: 0.9rem !important;
-                            }
+                                .sdg-dashboard2:hover img.sdg-desktop  {
+                                    padding: 0 0 30px 0;
+                                    transition: padding 0.3s ease-in-out;
+                                }
 
-                            .page-section-content-home-index .secondary nav.content-navigation>ul>li .icon {
-                                font-size: 1.8625rem !important;
-                            }
-
-                            .page-section-content-home-index .secondary nav.content-navigation>ul>li .count {
-                                font-size: .6rem !important;
-                            }
-
-                            .page-section-content-home-index .secondary nav.content-navigation {
-                                padding: 20px 0 !important;
-                            }
-
-                            section.page-section-header-home-index .container {
-                                background: none !important;
+                                .sdg-hidden-text {
+                                    padding: 5px 10px;
+                                    border-radius: 50px 50px 5px  5px;
+                                    left: 0;
+                                    text-align: center;
+                                    bottom: -50px;
+                                    transition: bottom 0.3s ease-in-out;
+                                }
                             }
                             </style>
 
                             <div class="container-inner">
-                                <div class="wrapper">
-                                    <div class="custom-slideshow slick-slider slick-dotted">
-                                        <div class="slick-slide-container">
-                                            <img tabindex="-1" src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/bg-B-1b.jpg">
-                                            <span class="slider-button"><a href="https://www.topuniversities.com/universities/city-university-hong-kong-cityuhk#322172" target="_blank" tabindex="0">READ MORE...</a></span>
-                                        </div>
-                                        <div class="slick-slide-container">
-                                            <img tabindex="-1" src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/bg-B-1a.jpg">
-                                            <span class="slider-button"><a href="https://www.topuniversities.com/asia-university-rankings?page=1" target="_blank" tabindex="0">READ MORE...</a></span>
-                                        </div>
-                                        <div class="slick-slide-container">
-                                            <img tabindex="-1" src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/bg-B-2.jpg">
-                                        </div>
-                                        <div class="slick-slide-container">
-                                            <img tabindex="-1" src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/bg-B-3.jpg">
-                                            <span class="slider-button"><a href="https://www.timeshighereducation.com/world-university-rankings/city-university-hong-kong#ranking-dataset/" target="_blank" tabindex="0">READ MORE...</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                               <div class="button-container">
+                                <div class="button-container">
                                     	<a href="https://www.cityu.edu.hk/media/news?f%5B0%5D=news-category%3A7101" target="_blank" class="btninfo">
                                     		<img src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/Demo_button_image_-TL01-029.jpg">
                                           		<div class="btnText">Research News<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 13px; padding-left: 8px;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"></path></svg></div>
@@ -1309,6 +1397,67 @@
                                     		<div class="btnText">Overarching Research Themes<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 13px; padding-left: 8px;"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"></path></svg></div>
                                 	    </a>
                                 </div>
+                                <div class="ranking">
+                                    <h4>
+                                        <img src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/ranking-star-solid.png" style="filter: brightness(0) saturate(100%) invert(20%) sepia(95%) saturate(4016%) hue-rotate(331deg) brightness(82%) contrast(100%); padding-right: 5px;" height="20px">RANKINGS
+                                    </h4>
+                                    <div class="slider">
+                                         <div class="slide-track">
+                                            <div class="slide">
+                                                <a href="https://www.topuniversities.com/universities/city-university-hong-kong#322172"><img src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/QS_Rankings_3.png" alt="QS World University Rankings 2025"></a>
+                                            </div>
+                                            <div class="slide">    
+                                                <a href="https://www.timeshighereducation.com/world-university-rankings/city-university-of-hong-kong#ranking-dataset/"><img src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/THE_Rankings_1.png" alt="THE World University Rankings 2025"></a>
+                                            </div>
+                                            <div class="slide">
+                                                <a href="https://www.topuniversities.com/asia-university-rankings?page=1"><img src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/QS_Rankings_1.png" alt="QS Asia University Rankings 2024"></a>
+                                            </div>
+                                            <div class="slide">
+                                                <a href="https://www.timeshighereducation.com/world-university-rankings/city-university-of-hong-kong#ranking-dataset/"><img src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/THE_Rankings_2.png" alt="THE Asia University Rankings 2025"></a>
+                                            </div>
+                                            <div class="slide">
+                                                <a href=""><img src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/QS_Rankings_2.png" alt="Top Researchers Rankings 2025"></a>
+                                            </div>
+                                            <div class="slide">
+                                                <a href="https://www.timeshighereducation.com/world-university-rankings/city-university-of-hong-kong#ranking-dataset/"><img src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/THE_Rankings_3.png" alt="THE Young University Rankings 2025"></a>
+                                            </div>
+                                            <div class="slide">
+                                                <a href="https://www.topuniversities.com/universities/city-university-hong-kong#322172"><img src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/QS_Rankings_3.png" alt="QS World University Rankings 2025"></a>
+                                            </div>
+                                            <div class="slide">
+                                                <a href="https://www.timeshighereducation.com/world-university-rankings/city-university-of-hong-kong#ranking-dataset/"><img src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/THE_Rankings_1.png" alt="THE World University Rankings 2025""></a>
+                                            </div>
+                                            <div class="slide">
+                                                <a href="https://www.topuniversities.com/asia-university-rankings?page=1"><img src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/QS_Rankings_1.png" alt="QS Asia University Rankings 2024"></a>
+                                            </div>
+                                            <div class="slide">    
+                                                <a href="https://www.timeshighereducation.com/world-university-rankings/city-university-of-hong-kong#ranking-dataset/"><img src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/THE_Rankings_2.png" alt="THE Asia University Rankings 2025"></a>
+                                            </div>
+                                            <div class="slide">
+                                                <a href=""><img src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/QS_Rankings_2.png" alt="Top Researchers Rankings 2025"></a>
+                                            </div>
+                                            <div class="slide">
+                                                <a href="https://www.timeshighereducation.com/world-university-rankings/city-university-of-hong-kong#ranking-dataset/"><img src="https://d329ms1y997xa5.cloudfront.net/accounts/81910/images/THE_Rankings_3.png" alt="THE Young University Rankings 2025"></a>
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sdg_custom_sec">
+                                <h2 class="sdg_title">Sustainability@CityUHK</h2>
+                            </div>
+                            <p>CityUHK is committed to integrating sustainability into university education, exploring sustainability challenges through research, and minimising waste and promoting resource conservation in our campus operations. Our <a href="https://www.cityu.edu.hk/sustainability/">Sustainability@CityUHK</a> website features our sustainability initiatives and endeavours. </p>
+                            <h3 class="sdg-sub-title"><img src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/book-solid-_1_.png" width="15px" style="padding-right: 10px; filter: brightness(0) saturate(100%) invert(15%) sepia(0%) saturate(35%) hue-rotate(150deg) brightness(87%) contrast(82%);">CityUHK SDG Research Dashboard </h3>
+                            <p class="sdg-sub-des">Use our Dashboard to learn more about how our recent research (2020 – 2025) is contributing to the UN’s Sustainable Development Goals (SDGs) and making an impact. </p>
+                            <div class="sdg_btn">
+                                <a class="sdg-dashboard2" href="https://app.powerbi.com/view?r=eyJrIjoiMDNmZmYwYmEtNmFjMC00MzMxLTk1NTUtYmQ1Y2Y2Y2VkZGQ2IiwidCI6IjgzZWVmMGZmLTY1ZWYtNDg3MC04OWRjLWUxYjljOGU0MzU2ZiIsImMiOjEwfQ%3D%3D" target="_blank">
+                                    <img class="sdg-desktop" src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/sdg-dashboard-transparent.png" width="100%">
+                                    <img class="sdg-mobile" src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/sdg-dashboard-transparent-mobile.png" width="100%">
+                                    <span class="sdg-hidden-text">View 2020 -2025 SDG Publications</span>
+                                </a>
+                            </div>
+                            <h3 class="sdg-sub-title"><img src="https://d329ms1y997xa5.cloudfront.net/accounts/219198/images/book-solid-_1_.png" width="15px" style="padding-right: 10px; filter: brightness(0) saturate(100%) invert(15%) sepia(0%) saturate(35%) hue-rotate(150deg) brightness(87%) contrast(82%);">CityUHK SDG Research</h3>
+                            <p class="sdg-sub-des">Explore our research on each of the SDGs by Researchers, Research Output and Projects (All Years)</p>
                         </div>
                     </div>
             </section>
@@ -1323,13 +1472,7 @@
 
 <section id="sdg_banner" class="page-section sdg_banner">
     <div class="container">
-        <div class="sdg_info">
-            <h2>
-                UN Sustainable Development Goals
-            </h2>
-
-            <p>In September 2015, 193 countries agreed to adopt a set of global goals to end poverty, protect the planet and ensure prosperity for all. Click on a goal to the right to explore how our researchers and their work are contributing towards achieving it. </p>
-        </div>
+        <div class="sdg_info"></div>
         <ul class="sdg_icons" role="menubar">
             
                 <li role="none" class="dropdown-overflow">
